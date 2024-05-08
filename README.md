@@ -10,6 +10,7 @@
 - [x] 6. How to count the number of characters, lines, and words in a file?
 - [x] 7. How to read and write a file using Streams (Stream Classes)?
 - [x] 8. Object Serialization and Deserialization in Java
+- [x] 9. What will happen if we directly use FileWriter.write(s1) instead of BufferedWriter.write(s1) method?
 
 
 ## 1. Introduction of Java File Handling
@@ -298,3 +299,5 @@ public class SampleClass {
 > 2. SerializationExample class demonstrates serialization and deserialization of the MyClass object.
 > 3. In the main method, an instance of MyClass is serialized to a file named "object.ser".
 > 4. Then, the object is deserialized from the same file, and the deserialized object is printed.
+
+## 9. What will happen if we directly use FileWriter.write(s1) instead of BufferedWriter.write(s1) method?
