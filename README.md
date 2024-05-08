@@ -1,4 +1,4 @@
-![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/8e808a09-1d34-48e6-9ad0-13db8cd60376)# Java File Handling
+# File Handling in Java
 📁 In this file, contains all possible concepts of Java file handling in detail.
 
 ## Topics
@@ -359,7 +359,6 @@ public class SampleClass {
 
 }
 ```
-
 
 ## Aditional Concepts
 
