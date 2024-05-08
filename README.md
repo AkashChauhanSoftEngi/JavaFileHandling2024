@@ -363,14 +363,13 @@ public class SampleClass {
 
 ## Aditional Concepts
 
+**1. Java.io.Console class in Java**
+> The Java.io.Console class provides methods to access the character-based console device, if any, associated with the current Java virtual machine. The Console class was added to java.io by JDK 6.
+> It is used to read from and write to the console if one exists.
+> Console supplies no constructors. Instead, a Console object is obtained by calling System.console().
+> If a console is available, then a reference to it is returned. Otherwise, null is returned. A console will not be available in all cases. Thus, if null is returned, no console I/O is possible.
+> 
 
-**1. InputStream & OutputStream Hierarchy** 
-![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/c8b604d8-cb2d-43ea-ae78-51ae012c8e5a)
-![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/8001329f-6ec3-4251-835e-9cf62982bb45)
-
-Reference: The above two images have been taken "from https://www.javatpoint.com/"
-
-**2. Java.io.Console class in Java**
 ```java
 import java.io.*; 
 class SampleClass  
@@ -403,4 +402,9 @@ class SampleClass
     } 
 }
 ```
+
+**2. ***
+> Access Hierarchy For Package java.io {https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/package-tree.html}
+
+![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/491163e2-28be-4521-b513-89f2247e32db)
 
