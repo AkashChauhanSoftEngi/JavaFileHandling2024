@@ -301,3 +301,35 @@ public class SampleClass {
 > 4. Then, the object is deserialized from the same file, and the deserialized object is printed.
 
 ## 9. What will happen if we directly use FileWriter.write(s1) instead of BufferedWriter.write(s1) method?
+```java
+public class SampleClass {
+
+	public static void main(String[] args) throws IOException {
+
+		String path = "file1.txt";
+		File file = new File(path);
+		
+		FileWriter fw = new FileWriter(file);
+//		BufferedWriter bw = new BufferedWriter(fw);
+
+		String s1 = "Java";
+		fw.write(s1);
+
+//		bw.close();
+		fw.close();
+
+	}
+
+}
+```
+
+**1. FileWriter.write(s1)**
+![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/6ff732cf-ea00-4c87-82ef-c66052df0f5c)
+
+
+**1. BufferedWriter.write(s1)**
+![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/351ebed8-48f2-4ab3-990b-d0f11aa9faa0)
+
+
+> [!Important]
+> 
