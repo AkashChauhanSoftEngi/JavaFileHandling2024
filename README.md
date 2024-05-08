@@ -218,6 +218,8 @@ public class SampleClass {
 
 			FileInputStream fis = new FileInputStream(inputFile);
 			FileOutputStream fos = new FileOutputStream(outputFile);
+			//FileOutputStream fos = new FileOutputStream(outputFile, true); // if you do not want to lose old data
+
 			int c;
 
 			while ((c = fis.read()) != -1) {
