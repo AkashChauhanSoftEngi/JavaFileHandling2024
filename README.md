@@ -354,7 +354,7 @@ public class SampleClass {
 ```
 
 > [!NOTE]
-> If we are going to write small statements many number of times (especially many short writes), the using the BufferedWriter will be more efficient. 
-> The BufferedWriter will save up many of the little writes and send only large chunks of data to the FileWriter. 
-> Writing one large chunk to a file is more efficient than many small ones because each call to FileWriter.write() involves a call to the operating system, and those are slow. 
+> If we are going to write small statements many number of times (especially many short writes), then using the BufferedWriter will be more efficient.
+> The BufferedWriter will save up many of the little writes and send only large chunks of data to the FileWriter.
+> Writing one large chunk to a file is more efficient than many small ones because each call to FileWriter.write() involves a call to the operating system, and those are slow.
 > It happens as BufferedWriter uses a buffer space to store data temporarily.
