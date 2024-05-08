@@ -362,5 +362,5 @@ public void write(String str, int off, int len) throws IOException {
 
 ```
 
-> [!IMPORTANT]
+> [!NOTE]
 > 
