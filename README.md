@@ -1,4 +1,4 @@
-# Java File Handling
+![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/8e808a09-1d34-48e6-9ad0-13db8cd60376)# Java File Handling
 📁 In this file, contains all possible concepts of Java file handling in detail.
 
 ## Topics
@@ -362,7 +362,45 @@ public class SampleClass {
 
 
 ## Aditional Concepts
+
+
+**1. InputStream & OutputStream Hierarchy** 
 ![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/c8b604d8-cb2d-43ea-ae78-51ae012c8e5a)
-![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/481a34c0-cbd3-48c5-b259-0772d2091e7b)
+![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/8001329f-6ec3-4251-835e-9cf62982bb45)
 
 Reference: The above two images have been taken "from https://www.javatpoint.com/"
+
+**2. Java.io.Console class in Java**
+```java
+import java.io.*; 
+class SampleClass  
+{ 
+    public static void main(String args[])  
+    { 
+        String str; 
+          
+        //Create a reference to the console. 
+        Console con = System.console(); 
+          
+        // Checking If there is no console available, then exit. 
+        if(con == null)  
+        { 
+            System.out.print("No console available"); 
+            return; 
+        } 
+          
+        // Read a string and then display it. 
+        str = con.readLine("Enter your name: "); 
+        con.printf("Here is your name: %s\n", str); 
+  
+        //to read password and then display it 
+        System.out.println("Enter the password: "); 
+        char[] ch=con.readPassword(); 
+  
+        //converting char array into string 
+        String pass = String.valueOf(ch); 
+        System.out.println("Password is: " + pass); 
+    } 
+}
+```
+
