@@ -402,8 +402,8 @@ class SampleClass
 }
 ```
 
-**2. ***
-> Access Hierarchy For Package java.io {https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/package-tree.html}
+**2. Access Hierarchy For Package java.io***
+> Link: {https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/package-tree.html}
 
 ![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/491163e2-28be-4521-b513-89f2247e32db)
 
