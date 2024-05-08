@@ -301,66 +301,21 @@ public class SampleClass {
 > 4. Then, the object is deserialized from the same file, and the deserialized object is printed.
 
 ## 9. What will happen if we directly use FileWriter.write(s1) instead of BufferedWriter.write(s1) method?
+
+**Code-1**
 ```java
-public class SampleClass {
-
-	public static void main(String[] args) throws IOException {
-
-		String path = "file1.txt";
-		File file = new File(path);
-		
-		FileWriter fw = new FileWriter(file);
-//		BufferedWriter bw = new BufferedWriter(fw);
-
-		String s1 = "Java";
-		fw.write(s1);
-
-//		bw.close();
-		fw.close();
-
-	}
-
-}
+FileWriter fw = new FileWriter("out.txt");
+fw.write("simple method");
+fw.close();
 ```
 
-**1. FileWriter.write(s1)**
+**Code-2**
 ```java
-public void write(String str, int off, int len) throws IOException {
-        synchronized (lock) {
-            char cbuf[];
-            if (len <= WRITE_BUFFER_SIZE) {
-                if (writeBuffer == null) {
-                    writeBuffer = new char[WRITE_BUFFER_SIZE];
-                }
-                cbuf = writeBuffer;
-            } else {    // Don't permanently allocate very large buffers.
-                cbuf = new char[len];
-            }
-            str.getChars(off, (off + len), cbuf, 0);
-            write(cbuf, 0, len);
-        }
-    }
-```
-
-**1. BufferedWriter.write(s1)**
-```java
-    public void write(String s, int off, int len) throws IOException {
-        synchronized (lock) {
-            ensureOpen();
-
-            int b = off, t = off + len;
-            while (b < t) {
-                int d = min(nChars - nextChar, t - b);
-                s.getChars(b, b + d, cb, nextChar);
-                b += d;
-                nextChar += d;
-                if (nextChar >= nChars)
-                    flushBuffer();
-            }
-        }
-    }
-
+FileWriter fw = new FileWriter("out.txt");
+BufferedWriter bw = new BufferedWriter(fw);
+bw.write("too much code");
+bw.close();
 ```
 
 > [!NOTE]
-> 
+> Hello
