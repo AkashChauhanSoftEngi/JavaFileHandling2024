@@ -194,7 +194,7 @@ public class SampleClass {
 	}
 }
 ```
-![outputfile](https://github.com/AkashChauhanSoftEngi/Java_Programming_Practice/assets/23252844/01750736-ee36-476a-ab07-d5f6a14a82f5)
+![Screenshot 2024-05-08 at 7 59 57 PM](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/787ec1b9-84f8-4212-8f25-12e509aaa500)
 
 ## 7. How to read and write a file using Streams (Stream Classes)?
 
