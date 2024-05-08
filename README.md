@@ -362,7 +362,7 @@ public class SampleClass {
 
 
 ## Aditional Concepts
-![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/281d4446-7064-49c8-a61c-a694590edeb9)
+![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/c8b604d8-cb2d-43ea-ae78-51ae012c8e5a)
 ![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/481a34c0-cbd3-48c5-b259-0772d2091e7b)
 
 Reference: The above two images have been taken "from https://www.javatpoint.com/"
