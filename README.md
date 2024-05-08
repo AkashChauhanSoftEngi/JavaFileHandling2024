@@ -317,6 +317,12 @@ bw.write("too much code");
 bw.close();
 ```
 
+> [!Important]
+> 1. If we are going to write small statements many times (especially many short writes), then using the BufferedWriter will be more efficient.
+> 2. The BufferedWriter will save up many of the little writes and send only large chunks of data to the FileWriter.
+> 3. Writing one large chunk to a file is more efficient than many small ones because each call to FileWriter.write() involves a call to the operating system, and those are slow.
+> 4. It happens as BufferedWriter uses a buffer space to store data temporarily.
+
 **Code-3**
 ```java
 public class SampleClass {
@@ -350,11 +356,4 @@ public class SampleClass {
 	}
 
 }
-
 ```
-
-> [!NOTE]
-> 1. If we are going to write small statements many times (especially many short writes), then using the BufferedWriter will be more efficient.
-> 2. The BufferedWriter will save up many of the little writes and send only large chunks of data to the FileWriter.
-> 3. Writing one large chunk to a file is more efficient than many small ones because each call to FileWriter.write() involves a call to the operating system, and those are slow.
-> 4. It happens as BufferedWriter uses a buffer space to store data temporarily.
