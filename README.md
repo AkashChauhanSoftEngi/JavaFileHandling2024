@@ -41,15 +41,14 @@ public class SampleClass {
 		String path = "file1.txt";
 		File file = new File(path);
 		
-		
-		FileWriter fileobj = new FileWriter(file);
-		BufferedWriter bf = new BufferedWriter(fileobj);
+		FileWriter fw = new FileWriter(file);
+		BufferedWriter bw = new BufferedWriter(fw);
 
 		String s1 = "Java";
-		bf.write(s1);
+		bw.write(s1);
 
-		bf.close();
-		fileobj.close();
+		bw.close();
+		fw.close();
 
 	}
 
@@ -100,17 +99,17 @@ public class SampleClass {
 		String s1 = sc.nextLine();
 		System.out.println(s1);
 
-		FileWriter fileobj = new FileWriter(file);
-		BufferedWriter bf = new BufferedWriter(fileobj);
+		FileWriter fw = new FileWriter(file);
+		BufferedWriter bw = new BufferedWriter(fw);
 
 		try {
-			bf.write(s1);
+			bw.write(s1);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		bf.close();
-		fileobj.close();
+		bw.close();
+		fw.close();
 		sc.close();
 	}
 }
@@ -133,17 +132,17 @@ public class SampleClass {
 		String s1 = sc.nextLine();
 		System.out.println(s1);
 
-		FileWriter fileobj = new FileWriter(file, true);
-		BufferedWriter bf = new BufferedWriter(fileobj);
+		FileWriter fw = new FileWriter(file, true);
+		BufferedWriter bw = new BufferedWriter(fw);
 
 		try {
-			bf.write(s1);
+			bw.write(s1);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
-		bf.close();
-		fileobj.close();
+		bw.close();
+		fw.close();
 		sc.close();
 	}
 }
