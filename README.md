@@ -363,10 +363,10 @@ public class SampleClass {
 ## Aditional Concepts
 
 **1. Java.io.Console class in Java**
-> The Java.io.Console class provides methods to access the character-based console device, if any, associated with the current Java virtual machine. The Console class was added to java.io by JDK 6.
-> It is used to read from and write to the console if one exists.
-> Console supplies no constructors. Instead, a Console object is obtained by calling System.console().
-> If a console is available, then a reference to it is returned. Otherwise, null is returned. A console will not be available in all cases. Thus, if null is returned, no console I/O is possible.
+> 1. The Java.io.Console class provides methods to access the character-based console device, if any, associated with the current Java virtual machine. The Console class was added to java.io by JDK 6.
+> 2. It is used to read from and write to the console if one exists.
+> 3. The console supplies no constructors. Instead, a Console object is obtained by calling System.console().
+> 4. If a console is available, then a reference to it is returned. Otherwise, null is returned. A console will not be available in all cases. Thus, if null is returned, no console I/O is possible.
 > 
 
 ```java
