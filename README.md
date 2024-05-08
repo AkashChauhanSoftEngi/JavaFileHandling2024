@@ -367,7 +367,7 @@ public class SampleClass {
 > 2. It is used to read from and write to the console if one exists.
 > 3. The console supplies no constructors. Instead, a Console object is obtained by calling System.console().
 > 4. If a console is available, then a reference to it is returned. Otherwise, null is returned. A console will not be available in all cases. Thus, if null is returned, no console I/O is possible.
-> 
+> If it does not work in your IDE then, try to run it through the system terminal. 
 
 ```java
 import java.io.*; 
