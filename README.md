@@ -317,5 +317,41 @@ bw.write("too much code");
 bw.close();
 ```
 
+**Code-3**
+```java
+public class SampleClass {
+
+	public static void main(String[] args) throws IOException {
+
+		String path = "file1.txt";
+		File file = new File(path);
+		
+		FileWriter fw = new FileWriter(file);
+		BufferedWriter bw = new BufferedWriter(fw);
+
+		String s1 = "Java";
+		
+		fw.write(s1);
+		fw.write(s1);
+		fw.write(s1);
+		fw.write(s1);
+		fw.write(s1);
+		fw.write(s1);
+	
+		bw.write(s1);
+		bw.write(s1);
+		bw.write(s1);
+		bw.write(s1);
+		bw.write(s1);
+
+		bw.close();
+		fw.close();
+
+	}
+
+}
+
+```
+
 > [!NOTE]
 > Hello
