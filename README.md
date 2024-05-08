@@ -324,12 +324,43 @@ public class SampleClass {
 ```
 
 **1. FileWriter.write(s1)**
-![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/6ff732cf-ea00-4c87-82ef-c66052df0f5c)
-
+```java
+public void write(String str, int off, int len) throws IOException {
+        synchronized (lock) {
+            char cbuf[];
+            if (len <= WRITE_BUFFER_SIZE) {
+                if (writeBuffer == null) {
+                    writeBuffer = new char[WRITE_BUFFER_SIZE];
+                }
+                cbuf = writeBuffer;
+            } else {    // Don't permanently allocate very large buffers.
+                cbuf = new char[len];
+            }
+            str.getChars(off, (off + len), cbuf, 0);
+            write(cbuf, 0, len);
+        }
+    }
+```
 
 **1. BufferedWriter.write(s1)**
-![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/351ebed8-48f2-4ab3-990b-d0f11aa9faa0)
+```java
+    public void write(String s, int off, int len) throws IOException {
+        synchronized (lock) {
+            ensureOpen();
 
+            int b = off, t = off + len;
+            while (b < t) {
+                int d = min(nChars - nextChar, t - b);
+                s.getChars(b, b + d, cb, nextChar);
+                b += d;
+                nextChar += d;
+                if (nextChar >= nChars)
+                    flushBuffer();
+            }
+        }
+    }
+
+```
 
 > [!Important]
 > 
