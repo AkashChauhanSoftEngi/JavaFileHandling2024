@@ -401,6 +401,8 @@ class SampleClass
     } 
 }
 ```
+![image](https://github.com/AkashChauhanSoftEngi/JavaFileHandling2024/assets/23252844/6ee8b9d5-6a18-45ff-b93c-3e56293defb6)
+
 
 **2. Access Hierarchy For Package java.io***
 > Link: {https://docs.oracle.com/javase%2F7%2Fdocs%2Fapi%2F%2F/java/io/package-tree.html}
